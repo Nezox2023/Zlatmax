@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title": "Карточка товара"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="page page_inner">
+            <div class="page__header">
+                <div class="page__container">
+                    <nav class=" page__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="catalog.html" class="breadcrumbs__link">Разделочные ножи</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Нож Снегирь</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__container">
+                    <div class="product__main main-product">
+                        <div class="main-product__images images-product">
+                            <div class="images-product__slider">
+                                <div class="images-product__swiper">
+                                    <div class="images-product__slide-ibg">
+                                        <img src="@img/product/01.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="@img/product/02.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="images-product__slide-ibg ">
+                                        <img src="@img/product/03.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="@img/product/04.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="images-product__slide-ibg">
+                                        <img src="@img/product/05.jpg" alt="Картинка">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="images-product__thumbs thumbs-product">
+                                <div class="thumbs-product__swiper">
+                                    <div class="thumbs-product__slide-ibg">
+                                        <img src="@img/product/01.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="thumbs-product__slide-ibg">
+                                        <img src="@img/product/02.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="thumbs-product__slide-ibg ">
+                                        <img src="@img/product/03.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="thumbs-product__slide-ibg">
+                                        <img src="@img/product/04.jpg" alt="Картинка">
+                                    </div>
+                                    <div class="thumbs-product__slide-ibg">
+                                        <img src="@img/product/05.jpg" alt="Картинка">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-product__body body-product">
+                            <div class="body-product__header header-product">
+                                <div class="header-product__line">
+                                    <h1 class="header-product__title">Нож Снегирь</h1>
+                                    <a href="#" class="header-product__link _icon-compare"></a>
+                                    <a href="#" class="header-product__link _icon-favorite"></a>
+                                </div>
+                                <div class="header-product__rating rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__value">3.6</div>
+                                </div>
+                            </div>
+                            <div class="body-product__table table-product">
+                                <div class="table-product__label">Артикул:</div>
+                                <div class="table-product__text">AF0000001952</div>
+                                <div class="table-product__label">Торговая марка:</div>
+                                <div class="table-product__text">WUESTHOF (Германия)</div>
+                                <div class="table-product__label">Серия:</div>
+                                <div class="table-product__text">Ножи серии Classic Ikon</div>
+                                <div class="table-product__label">Бонусные баллы:</div>
+                                <div class="table-product__text">38</div>
+                            </div>
+                            <div class="body-product__options options-product">
+                                <div class="options-product__label">Сталь</div>
+                                <div class="options-product__value">
+                                    <select name="form[]" class="options">
+                                        <option value="1" selected>Выбрать сталь</option>
+                                        <option value="2">Выбрать сталь №2</option>
+                                        <option value="3">Выбрать сталь №3</option>
+                                        <option value="4">Выбрать сталь №4</option>
+                                    </select>
+                                </div>
+                                <div class="options-product__label">Рукоять</div>
+                                <div class="options-product__value">
+                                    <select name="form[]" class="options">
+                                        <option value="1" selected>Выбрать рукоять</option>
+                                        <option value="2">Выбрать рукоять №2</option>
+                                        <option value="3">Выбрать рукоять №3</option>
+                                        <option value="4">Выбрать рукоять №4</option>
+                                    </select>
+                                </div>
+                                <div class="options-product__label">Гарда и тыльник</div>
+                                <div class="options-product__value">
+                                    <select name="form[]" class="options">
+                                        <option value="1" selected>Выбрать гарда и тыльник</option>
+                                        <option value="2">Выбрать гарда и тыльник №2</option>
+                                        <option value="3">Выбрать гарда и тыльник №3</option>
+                                        <option value="4">Выбрать гарда и тыльник №4</option>
+                                    </select>
+                                </div>
+                                <div class="options-product__label">Обработка клинка</div>
+                                <div class="options-product__value">
+                                    <select name="form[]" class="options">
+                                        <option value="1" selected>Выбрать обработку клинка</option>
+                                        <option value="2">Выбрать обработку клинка №2</option>
+                                        <option value="3">Выбрать обработку клинка №3</option>
+                                        <option value="4">Выбрать обработку клинка №4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="body-product__actions actions-product">
+                                <div class="actions-product__promo promo-actions-product">
+                                    <div class="promo-actions-product__price">3 865</div>
+                                    <div class="promo-actions-product__scores">+ 449 баллов за покупку <span data-tippy-content="Вам будут начислены баллы в размере 5% 
+                                        от стоимости покупки. Их можно будет использовать 
+                                        на оплату последующих заказов." class="promo-scores">?</span></div>
+                                </div>
+                                <div class="actions-product__row">
+                                    <div class="quantity">
+                                        <button class="quantity__button quantity__button_minus"></button>
+                                        <div class="quantity__input">
+                                            <input autocomplete="off" type="text" name="form[]" value="1">
+                                        </div>
+                                        <button class="quantity__button quantity__button_plus"></button>
+                                    </div>
+                                    <div class="actions-product__buttons">
+                                        <button class="actions-product__button button"><span class="_icon-cart">В корзину</span></button>
+                                        <button class="actions-product__button button button_black">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tabs="992" class="product__info product-info">
+                        <nav data-tabs-titles class="product-info__navigation">
+                            <button class="product-info__title _tab-active">Описание</button>
+                            <button class="product-info__title ">Характеристика</button>
+                            <button class="product-info__title ">Отзывы</button>
+                            <button class="product-info__title ">Доставка</button>
+                        </nav>
+                        <div data-tabs-body class="product-info__content">
+                            <div class="product-info__body">
+                                <p>
+                                    Легкий удобный нож с клинком, имеющим пологие вогнутые линзовидные спуски на две трети ширины клинка, образующие тонкое,
+                                    прекрасно режущее лезвие толщиной около 0,6 мм в районе подводов.
+                                </p>
+                                <p>Обух клинка со спинкой рукояти имеет одну плавную дугообразную линию. На пяте перед рукоятью есть подпальцевый вырез для точных работ.</p>
+                                <p>
+                                    Необходимо проявлять некоторую осторожность при работе с большими боковыми нагрузками на лезвие ножа, ввиду небольшой толщины клинка
+                                    в рабочей части.
+                                </p>
+                                <p>
+                                    Монтаж рукояти накладной плашечный. На навершии рукояти, функцию которого выполняет выступающий из под плашек хвостовик,
+                                    имеется отверстие под темляк. Этот нож удобный помощник при работе с продуктами и охоте на боровую и водоплавающую дичь.
+                                </p>
+                            </div>
+                            <div class="product-info__body">
+                                <p>
+                                    Легкий удобный нож с клинком, имеющим пологие вогнутые линзовидные спуски на две трети ширины клинка, образующие тонкое,
+                                    прекрасно режущее лезвие толщиной около 0,6 мм в районе подводов.
+                                </p>
+                                <p>Обух клинка со спинкой рукояти имеет одну плавную дугообразную линию. На пяте перед рукоятью есть подпальцевый вырез для точных работ.</p>
+                                <p>
+                                    Необходимо проявлять некоторую осторожность при работе с большими боковыми нагрузками на лезвие ножа, ввиду небольшой толщины клинка
+                                    в рабочей части.
+                                </p>
+                            </div>
+                            <div class="product-info__body">
+                                <p>Обух клинка со спинкой рукояти имеет одну плавную дугообразную линию. На пяте перед рукоятью есть подпальцевый вырез для точных работ.</p>
+                                <p>
+                                    Монтаж рукояти накладной плашечный. На навершии рукояти, функцию которого выполняет выступающий из под плашек хвостовик,
+                                    имеется отверстие под темляк. Этот нож удобный помощник при работе с продуктами и охоте на боровую и водоплавающую дичь.
+                                </p>
+                            </div>
+                            <div class="product-info__body">
+                                <p>
+                                    Монтаж рукояти накладной плашечный. На навершии рукояти, функцию которого выполняет выступающий из под плашек хвостовик,
+                                    имеется отверстие под темляк. Этот нож удобный помощник при работе с продуктами и охоте на боровую и водоплавающую дичь.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="page__similar-product similar-product similar-product_not-top">
+                @@include('html/product-slider.htm',{
+                "title": "Похожие товары"
+                })
+            </section>
+            <section class="page__recommendations-product recommendations-product recommendations-product_not-top">
+                @@include('html/product-slider.htm',{
+                "title": "Рекомендуем"
+                })
+            </section>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+    @@include('html/popup.html',{})
+    @@include('html/js.html',{})
+</body>
+
+</html>
